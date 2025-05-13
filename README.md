@@ -1,6 +1,6 @@
 # Rectified-CFG++ for Flow Based Models
 
-[![ArXiv](https://img.shields.io/badge/arXiv-blue)](https://arxiv.org/abs/xxxxxxx) [![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
+[![ArXiv](https://img.shields.io/badge/arXiv-Soon-blue)](https://arxiv.org/abs/xxxxxxx) [![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
 A **training-free**, **geometry-aware** guidance scheme for flow-based text-to-image (T2I) models. Rectified-CFG++ replaces the naïve extrapolation of classifier-free guidance (CFG) with a predictor–corrector integrator that stays on the learned data manifold, eliminating oversaturation and structural artifacts while improving prompt alignment and sampling efficiency.
 
