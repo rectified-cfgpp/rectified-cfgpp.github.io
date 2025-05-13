@@ -39,7 +39,7 @@ A **training-free**, **geometry-aware** guidance scheme for flow-based text-to-i
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Rectified-CFGpp.git
+git clone https://github.com/rectified-cfgpp/Rectified-CFGpp.git
 cd Rectified-CFGpp
 ```
 
@@ -91,4 +91,7 @@ Generated images will be saved in the specified output directory with filenames 
 ## 📚 Citation
 --SOON--
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
