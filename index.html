@@ -10,21 +10,21 @@
     <h1><strong>Rectified-CFG++ for Flow Based Models</strong></h1>
     <p id="authors">
       Anonymous Author(s)<br>
-      <em>Submitted to NeurIPS 2024 · Do not distribute</em>
+      <em>Under-Review: Do not distribute</em>
     </p>
     <p style="text-align:center; font-size:1.1em; margin:1em 0;">
       <a href="./data/main.pdf" target="_blank">[Paper]</a>
       &nbsp;&nbsp;&nbsp;
       <a href="https://arxiv.org/abs/XXXXX" target="_blank">[ArXiv]</a>
       &nbsp;&nbsp;&nbsp;
-      <a href="https://github.com/PLACEHOLDER/rectified-cfgpp" target="_blank">[Code]</a>
+      <a href="https://github.com/rectified-cfgpp/Rectified-CFGpp/tree/main" target="_blank">[Code]</a>
     </p>
     <img src="./data/fig1_teaser.png" class="teaser-gif" alt="Teaser: comparison of CFG vs Rectified-CFG++" style="width:100%; margin-top:1em;">
     <p>
       <strong>Rectified-CFG++</strong> is a training-free, geometry-aware guidance scheme for flow-based text-to-image models.
       By replacing the naïve extrapolation of classifier-free guidance with a predictor–corrector
-      integrator that stays on the learned data manifold, we eliminate oversaturation and structural
-      artifacts while improving prompt alignment and sampling efficiency.
+      integrator that stays on the learned data manifold, we eliminate structural
+      artifacts while improving prompt alignment, generation quality and sampling efficiency.
     </p>
   </div>
 
@@ -54,8 +54,7 @@
       <li><strong>Theoretical Foundations:</strong> Rigorous proofs showing marginal consistency and bounded
         deviation from the learned data manifold under mild assumptions (§3 &amp; Appendix).</li>
       <li><strong>Empirical Validation:</strong> Comprehensive evaluations on Flux, Stable Diffusion 3/3.5, and Lumina
-        across MS-COCO, LAION-Aesthetic, and T2I-CompBench, demonstrating superior quality,
-        prompt alignment, and sampling efficiency (§4).</li>
+        across MS-COCO, LAION-Aesthetic, and T2I-CompBench, demonstrating superior quality, prompt alignment, and sampling efficiency (§4).</li>
     </ul>
   </div>
 
@@ -70,29 +69,13 @@
   </div>
 
   <div class="content">
-    <h2 style="text-align:center;">Algorithm Sketch</h2>
-    <pre style="background:#f4f4f4; padding:1em; border-radius:4px;">
-Algorithm: Rectified-CFG++
-Require: vθ(·,t,y), prompt y, schedule α(t), steps Δt
-x ← sample N(0,I)
-for t = T down to 0:
-  v_c ← vθ(x,t,y)
-  x_pred ← x + (Δt/2) · v_c
-  v_c_mid ← vθ(x_pred,t-Δt/2,y)
-  v_u_mid ← vθ(x_pred,t-Δt/2,∅)
-  v̂ ← v_c + α(t)·(v_c_mid − v_u_mid)
-  x ← x + Δt·v̂
-return x</pre>
-  </div>
-
-  <div class="content">
     <h2 style="text-align:center;">BibTeX</h2>
     <code>
 @inproceedings{anonymous2024rectifiedcfgpp,<br>
 &emsp;title={{Rectified-CFG++ for Flow Based Models}},<br>
 &emsp;author={{Anonymous Author(s)}},<br>
-&emsp;booktitle={NeurIPS},<br>
-&emsp;year={2024}<br>
+&emsp;booktitle=NONE,<br>
+&emsp;year={2025}<br>
 }
     </code>
   </div>
