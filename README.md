@@ -2,6 +2,9 @@
 
 [![ArXiv](https://img.shields.io/badge/arXiv-Soon-blue)](https://arxiv.org/abs/xxxxxxx) [![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
+**Authors:** Shreshth Saini, Shashank Gupta, Alan C. Bovik  
+The University of Texas at Austin
+
 A **training-free**, **geometry-aware** guidance scheme for flow-based text-to-image (T2I) models. Rectified-CFG++ replaces the naïve extrapolation of classifier-free guidance (CFG) with a predictor–corrector integrator that stays on the learned data manifold, eliminating structural artifacts while improving prompt alignment, generation quality and sampling efficiency.
 
 ---
@@ -74,7 +77,14 @@ python demo.py \
 Generated images will be saved in the specified output directory with filenames indicating the guidance scale and number of steps used.
 
 ## 📚 Citation
---SOON--
+```bibtex
+@inproceedings{saini2025rectifiedcfgpp,
+  title     = {Rectified-CFG++ for Flow Based Models},
+  author    = {Shreshth Saini and Shashank Gupta and Alan C. Bovik},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2025}
+}
+```
 
 ## License
 
